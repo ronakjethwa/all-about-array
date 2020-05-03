@@ -19,7 +19,7 @@ console.log( unique(values) ); // Hare, Krishna, :-O
 ## Find Anagrams From Array
 
 ```javascript
-
+// With Map
 let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
 
 function anagram(arr) {
@@ -32,6 +32,20 @@ function anagram(arr) {
   }
 
   return Array.from(map.values());
+}
+console.log( anagram(arr) );
+
+// With Object
+et arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+function anagram(arr) {
+  let obj = {};
+
+  for (let i = 0; i < arr.length; i++) {
+    let sorted = arr[i].toLowerCase().split("").sort().join("");
+    obj[sorted] = arr[i];
+  }
+
+  return Object.values(obj);
 }
 console.log( anagram(arr) );
 ```
