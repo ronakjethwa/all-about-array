@@ -36,7 +36,7 @@ function anagram(arr) {
 console.log( anagram(arr) );
 
 // With Object
-et arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
 function anagram(arr) {
   let obj = {};
 
