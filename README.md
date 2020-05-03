@@ -42,7 +42,6 @@ function anagram(arr) {
     let sorted = arr[i].toLowerCase().split("").sort().join("");
     obj[sorted] = arr[i];
   }
-
   return Object.values(obj);
 }
 console.log( anagram(arr) );
