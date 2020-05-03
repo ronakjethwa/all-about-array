@@ -22,7 +22,7 @@ console.log( unique(values) ); // Hare, Krishna, :-O
 
 let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
 
-function aclean(arr) {
+function anagram(arr) {
   let map = new Map();
 
   for (let word of arr) {
@@ -33,5 +33,5 @@ function aclean(arr) {
 
   return Array.from(map.values());
 }
-console.log( aclean(arr) );
+console.log( anagram(arr) );
 ```
