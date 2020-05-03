@@ -1,4 +1,4 @@
-# all-about-array
+# All About Array
 JavaScript Short Array Manipulations
 
 
