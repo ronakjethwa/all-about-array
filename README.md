@@ -21,7 +21,6 @@ console.log( unique(values) ); // Hare, Krishna, :-O
 ```javascript
 // With Map
 let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
-
 function anagram(arr) {
   let map = new Map();
 
@@ -30,7 +29,6 @@ function anagram(arr) {
     let sorted = word.toLowerCase().split('').sort().join(''); // (*)
     map.set(sorted, word);
   }
-
   return Array.from(map.values());
 }
 console.log( anagram(arr) );
