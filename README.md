@@ -22,6 +22,7 @@ console.log( unique(values) ); // Hare, Krishna, :-O
 // With Map
 let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
 function anagram(arr) {
+  
   let map = new Map();
 
   for (let word of arr) {
@@ -36,6 +37,7 @@ console.log( anagram(arr) );
 // With Object
 let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
 function anagram(arr) {
+  
   let obj = {};
 
   for (let i = 0; i < arr.length; i++) {
