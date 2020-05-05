@@ -52,15 +52,7 @@ console.log( anagram(arr) );
 ## Flaten Multidimensional Array
 
 ```js
-let arrays = [
-  ["$6"],
-  ["$12"],
-  ["$25"],
-  ["$25"],
-  ["$18"],
-  ["$22"],
-  ["$10"]
-];
+let arrays = [ ["$6"],["$12"],["$25"],["$25"],["$18"],["$22"],["$10"] ];
 let merged = arrays.flat();
 console.log(merged);
 ```
