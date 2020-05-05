@@ -80,11 +80,11 @@ console.log(merged);
 
 ## Map & Flat
 ```js
-const animals = ['🐕', '🐈', '🐑', '🐮'];
-const noises = ['woof', 'meow', 'baa', 'mooo'];
+let animals = ['🐕', '🐈', '🐑', '🐮'];
+let noises = ['woof', 'meow', 'baa', 'mooo'];
 
-const mappedOnly = animals.map((animal, index) => [animal, noises[index]]);
-const mappedAndFlatten = animals.flatMap((animal, index) => [animal, noises[index]]);
+let mappedOnly = animals.map((animal, index) => [animal, noises[index]]);
+let mappedAndFlatten = animals.flatMap((animal, index) => [animal, noises[index]]);
 
 console.log(mappedOnly);
 console.log(mappedAndFlatten);
