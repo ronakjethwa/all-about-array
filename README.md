@@ -48,3 +48,52 @@ function anagram(arr) {
 }
 console.log( anagram(arr) );
 ```
+
+## Flaten Multidimensional Array
+
+```js
+var arrays = [
+  ["$6"],
+  ["$12"],
+  ["$25"],
+  ["$25"],
+  ["$18"],
+  ["$22"],
+  ["$10"]
+];
+var merged = arrays.flat();
+console.log(merged);
+```
+#### Infinitely Nested Arrays
+
+```js
+let veryDeep = [[1, [2, 2, [3,[4,[5,[6]]]]], 1]];
+let flattenArray = veryDeep.flat(Infinity);
+console.log(flattenArray);
+```
+
+```js
+var arrays = [
+  ["$6"],
+  ["$12"],
+  ["$25"],
+  ["$25"],
+  ["$18"],
+  ["$22"],
+  ["$10"]
+];
+var merged = [].concat.apply([],arrays);
+console.log(merged);
+```
+
+## Map & Flat
+```js
+const animals = ['🐕', '🐈', '🐑', '🐮'];
+const noises = ['woof', 'meow', 'baa', 'mooo'];
+
+const mappedOnly = animals.map((animal, index) => [animal, noises[index]]);
+const mappedAndFlatten = animals.flatMap((animal, index) => [animal, noises[index]]);
+
+console.log(mappedOnly);
+console.log(mappedAndFlatten);
+```
