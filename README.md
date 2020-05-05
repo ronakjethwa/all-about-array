@@ -52,7 +52,7 @@ console.log( anagram(arr) );
 ## Flaten Multidimensional Array
 
 ```js
-var arrays = [
+let arrays = [
   ["$6"],
   ["$12"],
   ["$25"],
@@ -61,7 +61,7 @@ var arrays = [
   ["$22"],
   ["$10"]
 ];
-var merged = arrays.flat();
+let merged = arrays.flat();
 console.log(merged);
 ```
 #### Infinitely Nested Arrays
@@ -73,8 +73,8 @@ console.log(flattenArray);
 ```
 
 ```js
-var arrays = [ ["$6"],["$12"],["$25"],["$25"],["$18"],["$22"],["$10"] ];
-var merged = [].concat.apply([],arrays);
+let arrays = [ ["$6"],["$12"],["$25"],["$25"],["$18"],["$22"],["$10"] ];
+let merged = [].concat.apply([],arrays);
 console.log(merged);
 ```
 
