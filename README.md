@@ -110,12 +110,19 @@ singers.sort(compare);
 
 ## .every On Array
 ```js
-// check if all elements are equal in an array
-const isEqual = (array, value) => array.every(item => item === value);
+// check if all elements are equal to a value in an array
+let isEqual = (array, value) => array.every(item => item === value);
 ```
 
 ## .some On Array
 ```js
-// check if all elements are equal in an array
-const isEqual = (array, value) => !array.some(item => item !== value);
+// check if all elements are equal to a value in an array
+let isEqual = (array, value) => !array.some(item => item !== value);
+```
+
+## Array + Set
+```js
+// check if all array elements are same or not
+let areEqual = array => new Set(array).size === array.length;
+areEqual([1,2,3,3]);
 ```
