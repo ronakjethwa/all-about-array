@@ -122,7 +122,7 @@ let isEqual = (array, value) => !array.some(item => item !== value);
 
 ## Array + Set
 ```js
-// check if all array elements are same or not
+// check if array has any duplicate elements
 let areEqual = array => new Set(array).size === array.length;
 areEqual([1,2,3,3]);
 ```
