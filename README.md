@@ -134,8 +134,8 @@ const numArray = [1, 2, [3, 10, [11, 12]], [1, 2, [3, 4]], 5, 6];
 function flattenArray(data) {
   const initialValue = [];
 
-  return data.reduce((total, value) => {
-    return total.concat(Array.isArray(value) ? flattenArray(value) : value);
+  return data.reduce((result, value) => {
+    return result.concat(Array.isArray(value) ? flattenArray(value) : value);
   }, initialValue);
 }
 
