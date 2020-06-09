@@ -126,3 +126,18 @@ let isEqual = (array, value) => !array.some(item => item !== value);
 let areEqual = array => new Set(array).size === array.length;
 areEqual([1,2,3,3]);
 ```
+
+## Flattening Array With Reduce
+```js
+const numArray = [1, 2, [3, 10, [11, 12]], [1, 2, [3, 4]], 5, 6];
+
+function flattenArray(data) {
+  const initialValue = [];
+
+  return data.reduce((total, value) => {
+    return total.concat(Array.isArray(value) ? flattenArray(value) : value);
+  }, initialValue);
+}
+
+console.log(flattenArray(numArray));
+```
