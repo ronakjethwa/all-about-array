@@ -135,7 +135,7 @@ function flattenArray(data) {
   const initialValue = [];
 
   return data.reduce((result, value) => {
-    return result.concat(Array.isArray(value) ? flattenArray(value) : value);
+    return result.concat( Array.isArray(value) ? flattenArray(value) : value );
   }, initialValue);
 }
 
