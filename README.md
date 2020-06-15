@@ -6,7 +6,7 @@ JavaScript Short Array Manipulations
 
 ```javascript
 function unique(arr) {
-  return Array.from(new Set(arr));
+  return [...new Set(arr)];
 }
 
 let values = ["Hare", "Krishna", "Hare", "Krishna",
